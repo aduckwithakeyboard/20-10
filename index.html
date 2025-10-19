@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gift Box Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="hearts-container">
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content-wrapper">
+    <div class="grid-container">
+      <p class="reveal-text" style="animation-delay: 0s;">Nhân ngày 20/10</p>
+      <p class="reveal-text" style="animation-delay: 1s;">Chúc các bạn nữ 12A5</p>
+      <p class="reveal-text" style="animation-delay: 2s;">Luôn xinh đẹp và mạnh khoẻ</p>
+      <p class="reveal-text" style="animation-delay: 3s;">Tất cả trừ vất vả</p>
+    </div>
+
+    <div class="gift-wrapper">
+  <img
+    src="giftbox.png"
+    alt="Gift Box"
+    class="gift-image reveal-gift"
+    id="giftBox"
+  />
+    <p class="touch-text reveal-text" style="animation-delay: 4s;" >Touch Here</p>
+    </div>
+
+  </div>
+
+  <script>
+  const box = document.getElementById('giftBox');
+
+  box.addEventListener('click', () => {
+    box.classList.add('clicked');
+    setTimeout(() => {
+      window.location.href = "surprise.html";
+    }, 800);
+  });
+</script>
+
+
+</body>
+</html>
